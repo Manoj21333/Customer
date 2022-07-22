@@ -1,0 +1,13 @@
+spring:
+ datasource:
+   url: jdbc:sqlserver://mysqldbmanoj.database.windows.net:1433;database=MYsqldb;user=Manoj21333@mysqldbmanoj;password={your_password_here};encrypt=true;trustServerCertificate=false;hostNameInCertificate=*.database.windows.net;loginTimeout=30;
+   username: Manoj21333
+   password: Manoj@123
+ jpa:  
+   show-sql: true
+   hibernate:
+     ddl-auto: update
+     dialect: org.hibernate.dialect.SQLServer2012Dialect
+     
+server:
+  port: 9191

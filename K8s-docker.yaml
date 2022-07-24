@@ -1,0 +1,18 @@
+apiVersion: app/v1
+kind: Deployment
+metadata:
+  name: K8s-docker-deployment
+  labels:
+     app: K8s-docker
+  spec:
+   replicas: 1
+   selector:
+     matchLabels:
+       app: K8s-docker
+       spec:
+        containers:
+        - name: K8s-docker
+          image: 
+          ports: 
+          -containers: 8080     
+    
